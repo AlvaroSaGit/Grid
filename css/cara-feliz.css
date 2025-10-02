@@ -1,0 +1,64 @@
+@import url(style.css);
+
+.grid-con-areas{
+  display: grid;
+  grid-template-rows: repeat(20,1fr);
+  grid-template-columns: repeat(20,1fr);
+  grid-template-areas: ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . ojito ojito ojito . . . . . . . . ojo ojo ojo . . ."
+                      ". . . ojito ojito ojito . . . . . . . . ojo ojo ojo . . ."
+                      ". . . ojito ojito ojito . . . . . . . . ojo ojo ojo . . ."
+                      ". . . ojito ojito ojito . . . . . . . . ojo ojo ojo . . ."
+                      ". . . . . . . . . nariz nariz . . . . . . . . ."
+                      ". . . . . . . . . nariz nariz . . . . . . . . ."
+                      ". . . . . . . . . nariz nariz . . . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . b1 b1 . . . . . . . . . . b2 b2 . . ."
+                      ". . . b1 b1 . . . . . . . . . . b2 b2 . . ."
+                      ". . . . . b3 b3 . . . . . . b4 b4 . . . . ."
+                      ". . . . . b3 b3 . . . . . . b4 b4 . . . . ."
+                      ". . . . . . . b5 b5 b5 b5 b5 b5 . . . . . . ."
+                      ". . . . . . . b5 b5 b5 b5 b5 b5 . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . ."
+                      ". . . . . . . . . . . . . . . . . . . .";
+}
+
+:root{
+  --color: bisque;
+}
+
+.ojoizquierdo, .ojoderecho, .nariz,.b1,.b2,.b3,.b4,.b5{
+  background-color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ojoizquierdo{
+  grid-area: ojito;
+}
+
+.ojoderecho{
+  grid-area: ojo;
+}
+.nariz{
+  grid-area: nariz;
+}
+.b1{
+  grid-area: b1;
+}
+.b2{
+  grid-area: b2;
+}
+.b3{
+  grid-area: b3;
+}
+.b4{
+  grid-area: b4;
+}
+.b5{
+  grid-area: b5;
+}

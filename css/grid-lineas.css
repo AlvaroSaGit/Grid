@@ -1,0 +1,8 @@
+@import url(style.css);
+
+.grid-lineas{
+  display: grid;
+  grid-template-columns: 20% repeat(2, 30%) 20% ;
+  grid-template-rows: repeat(5, 100px);
+}
+

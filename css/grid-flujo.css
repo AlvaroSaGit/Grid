@@ -1,0 +1,23 @@
+@import url(style.css);
+
+.grid-flujo{
+  display: grid;
+  /*5 columnas * 3 filas, columnas 1 fr y las filas de 150px*/
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(3,150px);
+  /*Controla las celdas implicitas, en este caso, si se desborda se ponen en columna las sobrantes*/
+  grid-auto-flow: column;
+  /*Les indica un valor predeterminado a las celdas implicitas, en este caso de fila*/
+  grid-auto-rows: 150px;
+
+  /*El flow de las cajas implicitas es en columna, y su valor predeterminado es de 80*/
+  /*El flow del grid sera en columna*/
+  grid-auto-flow: column;
+  /*Las columnas automaticas o implicitas tendran un tamaño de 80px*/
+  grid-auto-columns: 80px;
+
+  /*El flow del grid sera en fila*/
+  grid-auto-flow: row;
+
+  /*El grid auto sirve para los item que sobran para colocarlos en una fila o columna automaticamente de forma implicita*/
+}

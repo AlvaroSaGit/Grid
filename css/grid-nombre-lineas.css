@@ -1,0 +1,40 @@
+@import url(style.css);
+
+.grid-con-nombres-lineas{
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+
+  /*Se aplica los nombres teniendo 1fr cada uno*/
+  /*COLUMNAS*/
+  grid-template-columns: [linea-column-1]1fr[linea-column-2]1fr[linea-column-3]1fr[linea-column-4]1fr[linea-column-5]1fr;
+  /*FILAS*/
+  grid-template-rows: [linea-rows-1]1fr[linea-rows-2]1fr[linea-rows-3]1fr[linea-rows-4]1fr[linea-rows-5]1fr;
+}
+
+.item:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  background-color: tomato;
+  /*Se ajustara y aplicara al item desde las filas 1 al 3*/
+  grid-row: linea-rows-1 / linea-rows-5;
+  /*Se ajustara en la columna 4*/
+  grid-column: linea-column-2 / linea-column-4;
+}
+
+.item:nth-child(6){
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 24px;
+
+  background-color: steelblue;
+
+  grid-row:linea-rows-3 / linea-rows-6;
+  grid-column: linea-column-4 / linea-column-5;
+
+}

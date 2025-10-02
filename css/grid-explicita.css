@@ -1,0 +1,12 @@
+@import url(style.css);
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* Funcion de repeat nos ayuda a repetir un valor x valores sea de columnas o filas */
+  /* Ademas se les puede asignar los valores unicos por ahora inicio o final */
+  grid-template-columns: 200px repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}

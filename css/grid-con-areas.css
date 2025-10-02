@@ -1,0 +1,49 @@
+@import url(style.css);
+
+.grid-con-areas{
+  display: grid;
+  grid-template-rows: repeat(12,1fr);
+  grid-template-columns: repeat(12,1fr);
+  grid-template-areas: "Header Header Header Header Header Header Header Header Header Header Header Header"
+                      "Header Header Header Header Header Header Header Header Header Header Header Header"
+                      "formulario formulario formulario formulario . violeta . . . . . ."
+                      "formulario formulario formulario formulario . violeta . . . . . ."
+                      "formulario formulario formulario formulario . violeta cajaverde cajaverde . . . ."
+                      "formulario formulario formulario formulario . violeta cajaverde cajaverde . . . ."
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta cajaverde cajaverde . . . ."
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta cajaverde cajaverde . . . ."
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta . . caja caja caja caja"
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta . . caja caja caja caja"
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta . . caja caja caja caja"
+                      "cajaAzul cajaAzul cajaAzul cajaAzul cajaAzul violeta . . caja caja caja caja";
+}
+
+.header{
+  grid-area: Header;
+  background-color: beige;
+}
+
+.formulario{ 
+  grid-area:formulario;
+  background-color: brown;
+}
+
+.cajaazul{
+  grid-area: cajaAzul;
+  background-color: skyblue;
+}
+
+.epicacaja{
+  grid-area: caja;
+  background-color: tomato;
+}
+
+.musgocajaverde{
+  grid-area: cajaverde;
+  background: lightgreen;
+}
+
+.mejorcolordelmundo{
+  grid-area: violeta;
+  background-color: rebeccapurple;
+}

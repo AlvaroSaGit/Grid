@@ -1,0 +1,17 @@
+@import url(style.css);
+
+.grid-flujo-denso{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,200px);
+  /*Procura rellenar los espacios*/
+  grid-auto-flow: row dense;
+}
+
+.item:nth-child(9){
+  background-color: darkred;
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+
