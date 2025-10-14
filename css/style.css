@@ -7,7 +7,7 @@
 body{
   background-color: whitesmoke;
   display: flex;
-  /*Para aplicar a la altura*/
+  /*La altura, 100 de viewportheight*/
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -16,13 +16,16 @@ body{
 .container{
   width: 80%;
   height: 80vh;
-  background-color: #222;
+  background-color: #222222;
   margin: 0 auto;
 }
 
 .item{
-  background-color: #666;
-  border: solid 1px #999;
-  font-size: 1.5rem;
+  display: flex;
+  background-color: #666666;
+  border: solid 1px #999999;
+  font-size: 1.7rem;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }

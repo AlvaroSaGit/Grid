@@ -1,0 +1,11 @@
+@import url(style.css);
+
+.grid-maximo-minimo{
+  display: grid;
+  /*1fr es mas o menos el auto*/
+
+  /*Se establece el tamaño minimo y el tamaño maximo, esto permite que sea flexible la caja entre estos 2 valores*/
+  grid-template-columns: repeat(4, minmax(min-content,200px));
+  grid-template-columns: repeat(minmax(100px,max-content));
+
+}

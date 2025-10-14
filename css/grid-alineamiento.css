@@ -1,0 +1,41 @@
+@import url(style.css);
+
+.grid-alineamiento{
+  display: grid;
+
+  grid-template-rows: repeat(2,200px);
+  grid-template-columns: repeat(3,200px);
+
+  /*Procura ocupar todo el espacio de la celda*/
+  justify-items: stretch;
+
+  /*JUSTIFY-ITEM EJE X*/
+
+  /*Se justifica al tamaño de la carta, es como una etiqueta flexible, en el eje X*/
+  justify-items: start;
+
+  /*se ajusta al tamaño del contenido y se posiciona al final de la celda*/
+  justify-items: end;
+
+  justify-items: center;
+
+  /*ALIGN ITEMS EJE Y*/
+
+  /*se estira en el eje Y el contenido de la celda*/
+  align-items: stretch;
+  /*se ajusta al contenido y lo posiciona arriba, eje Y es decir,al inicio*/
+  align-items: start;
+
+  /*se ajusta al contenido y lo posiciona abajo, eje Y*/
+  align-items: end;
+
+  align-items: center;
+}
+
+.item:nth-child(2){
+  background-color: brown;
+
+  /*Se aplica la propiedad a si mismo, en vez de aplicarselo al contenido de .item*/
+  justify-self: end;
+  align-self: start;
+}
